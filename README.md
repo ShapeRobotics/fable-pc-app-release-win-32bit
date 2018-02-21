@@ -113,7 +113,7 @@ Then, zip the server and send it over to your 64-bit machine.
 2) (on the 64bit machine) add the fields bellow to your SYSTEM ENVIRONMENT VARIABLES. This enables Electron to automatically sign the installer
    <pre> CSC_LINK - add path to .p12 certificate as the value </pre>
    <pre> CSC_KEY_PASSWORD - password for certificate as the value </pre>
-    For details please look up:<pre> https://www.electron.build/code-signing </pre>
+For details please look up:<pre> https://www.electron.build/code-signing </pre>
  
 4) <pre> npm run build_toolboxes && npm run copy_static && npm run copy_drivers && npm run copy_sounds && npm run copy_examples && npm run dist </pre>
 5) Install the app on your 32-bit machine and check the install folder:
