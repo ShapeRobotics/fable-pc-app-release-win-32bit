@@ -13,7 +13,7 @@ Once you have a stable and tested build follow these steps to test the auto upda
 Note: Once your test build is installed you can monitor the auto update process in the log.log file. Details on that bellow.
 Always ask if you are unsure about this.
 
-# HOW TO CREATE A BUILD
+# HOW TO CREATE A BUILD 32bit
 
 To create a build follow these steps:
 1) update package.json with the current version number. Pay attention to the bold type text. Those are the fields that need checking:
