@@ -4,12 +4,13 @@
 <strong>Even if you have a stable build, you must check that it can perform an update to a higher version </strong>
 
 Once you have a stable and tested build follow these steps to test the auto updater function:
-1) check the latest version number of fable in this release repository
-    For example, we will consider that the latest one is 1.2.4
+1) Check the latest version number of fable in this release repository. For example, we will consider that the latest one is 1.2.4
 2) Now, say we are currently on 1.2.6. So, you go ahead and make the build as described in the section bellow. Nice and by the book. 
-3) <strong> The goal is to ensure that the autoupdate code works. If it does not it is critical you fix it before anything else </strong> So, once 1.2.6 is done you go to this path <pre>C:\Program Files\Fable\resources\app</pre>
-4) Open package.json and modify 1.2.6 to be smaller than 1.2.4 (or whatever the latest version is). So 1.2.3 or bellow
-5) Starting your installed Fable now should result in it autoupdating to 1.2.4
+3) <strong> The goal is to ensure that the autoupdate code works. If it does not it is critical you fix it before anything else.  </strong> 
+So, once 1.2.6 is done installing you go to this local path where Fable is installed 
+<pre>C:\Program Files\Fable\resources\app\package.json</pre>
+4) <strong>This part is a bit of a hack</strong>: Open package.json and modify 1.2.6 to be smaller than 1.2.4 (or whatever the latest version is). So 1.2.3 or below.
+5) Starting your installed Fable will make it think it is at 1.2.3. Consequently, it will attempt to update to 1.2.4 which is the preferred behaviour.
 
 Note: You can monitor the auto update process in the log.log file. Details on that bellow.
 Always ask if you are unsure about this.
