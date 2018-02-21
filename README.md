@@ -4,13 +4,14 @@
 <strong>Even if you have a stable build, you must check that it can perform an update to a higher version </strong>
 
 Once you have a stable and tested build follow these steps to test the auto updater function:
-1) go and check this link:
-<pre> https://github.com/ShapeRobotics/fable-pc-app-release-test </pre>
-2) find the latest version of fable. For example, we will consider that the latest one is 1.2.4
-3) Now create a version build using the latest code that has a previous version number. For example 1.2.3. Consequently, it should update to 1.2.4.
-4) <strong> The goal is to ensure that the autoupdate code works. If it does not it is critical you fix it before anything else </strong> So, install 1.2.3 and wait to see if it updates to 1.2.4
+1) check the latest version number of fable in this release repository
+    For example, we will consider that the latest one is 1.2.4
+2) Now, say we are currently on 1.2.6. So, you go ahead and make the build as described in the section bellow. Nice and by the book. 
+3) <strong> The goal is to ensure that the autoupdate code works. If it does not it is critical you fix it before anything else </strong> So, once 1.2.6 is done you go to this path <pre>C:\Program Files\Fable\resources\app</pre>
+4) Open package.json and modify 1.2.6 to be smaller than 1.2.4 (or whatever the latest version is). So 1.2.3 or bellow
+5) Starting your installed Fable now should result in it autoupdating to 1.2.4
 
-Note: Once your test build is installed you can monitor the auto update process in the log.log file. Details on that bellow.
+Note: You can monitor the auto update process in the log.log file. Details on that bellow.
 Always ask if you are unsure about this.
 
 # HOW TO CREATE A BUILD 32bit
